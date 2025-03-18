@@ -1,0 +1,13 @@
+*.glh filter=lfs diff=lfs merge=lfs -text
+
+# Mark all .md files as Markdown
+*.md linguist-language=Markdown
+
+# Mark all .html files as HTML
+*.html linguist-language=HTML
+
+# Mark all .css files as CSS
+*.css linguist-language=CSS
+
+# Windows CRLF
+* text=auto
