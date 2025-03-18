@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"e579de542745aecb","type":"file","file":"Cybersecurity/CompTIA/CompTIA CySA+/Diagrams/OAuth Authentication Process.png","x":-440,"y":-400,"width":494,"height":372,"color":"#ffffff"},
+		{"id":"df6b5fae173ce58f","type":"file","file":"Cybersecurity/CompTIA/CompTIA CySA+/Diagrams/NIST SP 800-115 Penetration Test Methodology.png","x":-440,"y":80,"width":611,"height":220,"color":"#ffffff"},
+		{"id":"246ed9b773af5555","type":"file","file":"Cybersecurity/CompTIA/CompTIA CySA+/Diagrams/NIST SP 800-61 Diagram.png","x":-440,"y":380,"width":916,"height":176,"color":"#ffffff"},
+		{"id":"065c73ef381834cc","type":"file","file":"Cybersecurity/CompTIA/CompTIA CySA+/Diagrams/Order of Volatility Diagram.png","x":300,"y":-433,"width":240,"height":733,"color":"#ffffff"}
+	],
+	"edges":[]
+}
