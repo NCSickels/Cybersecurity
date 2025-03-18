@@ -1,0 +1,30 @@
+/* Rainbow headers for Obsidian markdown */
+.cm-header-1,
+.markdown-preview-view h1 {
+  color: #d32f2f; /* Red: ff0000 */
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+  color: #f0ae59; /* Orange */
+}
+
+.cm-header-3,
+.markdown-preview-view h3 {
+  color: #f1ca5d; /* Yellow */
+}
+
+.cm-header-4,
+.markdown-preview-view h4 {
+  color: #9dcd78; /* Green */
+}
+
+.cm-header-5,
+.markdown-preview-view h5 {
+  color: #8ab6e2; /* Blue */
+}
+
+.cm-header-6,
+.markdown-preview-view h6 {
+  color: #aaa5db; /* Violet */
+}
