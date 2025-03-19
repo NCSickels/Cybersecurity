@@ -92,6 +92,12 @@ service --status-all | grep '\[ + \]'
 
 ---
 
+- Get a list of network adapters and IP addresses in short form:
+
+```bash
+ip -o -4 addr list | awk '{print $2, $4}'
+```
+
 - Get interface MAC addresses:
 
 ```bash
