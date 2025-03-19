@@ -13,7 +13,6 @@ From the [PEP-8](https://peps.python.org/pep-0008/) style guide:
 ### Double Underscores
 
 From the [Python docs](https://docs.python.org/3/tutorial/classes.html#private-variables): 
-
 > [!quote]
 > Any identifier of the form `__spam` (at least two leading underscores, at most one trailing underscore) is textually replaced with `_classname__spam`, where `classname` is the current class name with leading underscore(s) stripped. This mangling is done without regard to the syntactic position of the identifier, so it can be used to define class-private instance and class variables, methods, variables stored in globals, and even variables stored in instances. private to this class on instances of other classes.
 
@@ -26,14 +25,34 @@ From the [Python docs](https://docs.python.org/3/tutorial/classes.html#private-v
 
 ***Forward references*** in Python refer to type annotations for classes or types that have not yet been fully defined when the annotation is used. To indicate a forward reference, you should enclose the type name in quotes. This approach is beneficial when the class definition is incomplete or when there are circular dependencies between classes. Python will raise a `NameError` if the type name is not quoted because it attempts to resolve the type name immediately. 
 
-For example: 
-
-```python
+```python title:Example
 class Hcurve:
 	...
 	@classmethod
 	def fromSize(self, dimension, size) -> "Hcurve":
 		...
+```
+
+## Stub Files
+---
+
+***Stub files*** (`.pyi` files) are used to provide type hints to Python code, which helps with static type checking and code completion in IDEs like Visual Studio Code. 
+
+Within stub files, ellipses (`...`) are used as placeholders to indicate that the function bodies are not provided in the stub file. Instead, they signify that the function exists and provide its signature, including the return type and parameter types. This allows type checkers and IDEs to understand how the function should be used without needing the actual implementation.
+
+```python title:"Example Stub File - math.pyi"
+from typing import List, Tuple
+
+def add(a: int, b: int) -> int: ...
+def subtract(a: int, b: int) -> int: ...
+def multiply(a: int, b: int) -> int: ...
+def divide(a: int, b: int) -> float: ...
+
+def mean(numbers: List[float]) -> float: ...
+def median(numbers: List[float]) -> float: ...
+def mode(numbers: List[float]) -> float: ...
+
+def solve_quadratic(a: float, b: float, c: float) -> Tuple[float, float]: ...
 ```
 
 ## Init Python File
