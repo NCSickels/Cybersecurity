@@ -19,7 +19,7 @@
 - [[Obsidian Cheat Sheet]]
 - [[OS Cheat Sheet]]
 - [[Python Cheat Sheet]]
-- [[Python TL;DR]]
+- [[Python TL;DR Cheat Sheet]]
 - [[Cybersecurity/Cheat Sheets/tmux-cheat-sheet.png]]
 - [[Cybersecurity/Cheat Sheets/TypeScript Cheat Sheet.pdf|TypeScript Cheat Sheet]]
 - [[Cybersecurity/Cheat Sheets/Vi Cheat Sheet.pdf|Vi Cheat Sheet]]
