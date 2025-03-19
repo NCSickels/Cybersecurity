@@ -97,6 +97,7 @@ service --status-all | grep '\[ + \]'
 ```bash
 find /sys/class/net -mindepth 1 -maxdepth 1 ! -name lo -printf "%P: " -execdir cat {}/address \;
 ```
+
 - Get installed tools:
 
 ```bash
