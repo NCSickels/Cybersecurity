@@ -18,6 +18,7 @@ Complete collection of notes and resources for Cybersecurity, Pentesting, and Et
 - Center Images
 - Iterative Rainbow Folder Titles
 - Iterative Rainbow Headers
+- Sidenote Callouts
 
 ## Recommended Plugins
 
