@@ -1,11 +1,28 @@
 # OS Cheat Sheet
 
-## Windows 10
+## Windows 10/11
 
 ---
 
 - During Windows 11 setup, on internet prompt, press Shift + F10 to pull up command prompt, then type: `oobe\BypassNRO`. Once the device restarts, the internet requirement will be removed.
 
+### Sticky Keys Password Reset Method
+
+> [!tldr] TL;DR
+> 1. Boot to Windows Installation Drive
+> 2. Press **Shift + F10** or Select: **Next > Repair your computer > Troubleshoot > Command Prompt** 
+> 3. Type the commands: First: `c:`, then:`copy c:\windows\system32\sethc.exe sethc.bak`, then: `copy c:\windows\system32\cmd.exe sethc.exe`. Enter `Y` when prompted. 
+> 4. Restart the computer.
+> 5. On the login screen, press **Shift** five times. This should pull up a command prompt window.
+> 6. Type the commands: `net user tempuser password /add` and `net localgroup administrators tempuser /add`. Or to reset an existing user's password, type: `net user <USER>` 
+
+
+1. On Windows computers, you press a special key to access the boot menu or BIOS. If your startup screen doesn't show you which key to press just before the Windows startup logo appears, reboot your computer and quickly press ESC, DELETE, F8, F9, F10, F11, or F12 right as it begins to start up. Search online for "boot menu" and the specific make and model of your computer to find the right key.
+2. If the boot menu appears, select the **Boot from DVD** or **Boot from USB** option to boot from the Windows installation disc you inserted, then move on to step 5.
+3. If the boot menu doesn't appear after a few restarts, try entering the BIOS menu instead: turn the computer off and on again, and press DELETE, F2, F9, F10, F12, or ESC. Search online for "BIOS" and your computer model to find the right key.
+4. Once you're inside the BIOS, find the boot options and change the order or priority of your boot devices (often by using your arrow keys) to make the USB or DVD the top option. Then save the changes and exit the BIOS.
+5. Reboot the computer again. You should briefly see the message Press any key to boot from CD or DVD or Press any key to boot from USB device. Press any key (such as the spacebar) _immediately_ to boot from your DVD or USB.
+6. When the Windows installation disc starts up, click **Next>Repair your computer>Troubleshoot>Command Prompt**, as shown below. The menu order or the option names might look different, but look for the Windows command prompt.
 ### Show AP passwords
 
 ```cmd

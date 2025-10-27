@@ -9,6 +9,7 @@
 |   `Ctrl + K, Ctrl + J`   | Expand All                          |
 |    `Ctrl + Shift + L`    | Highlight All Occurrences of a Word |
 | `Ctrl + ]` or `Ctrl + [` | Multiline Indent                    |
+|       `Alt + Ctrl`       | Multiline Select                    |
 ## Configuration
 ### Extensions
 #### General

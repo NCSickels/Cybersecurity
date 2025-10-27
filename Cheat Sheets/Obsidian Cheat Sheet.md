@@ -1,5 +1,19 @@
 # Obsidian Styling Cheat Sheet
 
+## Multi-Column Callouts
+---
+
+**Multi-Columns with Callout Header**
+```markdown
+> [!note] Main Header
+>> [!multi-column]
+>>> [!blank] 
+>> Text 1
+>> 
+>>> [!blank]
+>> Text 2
+```
+
 ## Fonts and Styling
 
 ---

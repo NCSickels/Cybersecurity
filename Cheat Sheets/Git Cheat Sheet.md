@@ -1,5 +1,14 @@
-# Git
+# Git 
 
+## Git Repository Config
+
+```bash
+http.sslVerify=false
+user.email=<EMAIL>
+user.password=<PASSWORD_TOKEN>
+user.name=<USERNAME>
+credential.helper=store
+```
 ## Git HEAD Detached
 
 ```bash
@@ -125,3 +134,43 @@ The `--hard` option resets the commit history to a previous state and discards a
 ```bash
 git reset --hard HEAD~1
 ```
+
+## Mirror GitHub Repository to GitLab
+
+1.  Clone the GitHub Repository Locally
+
+```bash
+git clone --mirror https://github.com/username/repository.git
+```
+- `--mirror` clones all refs (branches, tags) and the full history including commits, branches, and remotes.
+
+2. Create a new repository on GitLab
+3. Push to GitLab
+
+```bash
+cd repository.git
+git push --mirror https://gitlab.com/username/repository.git
+```
+
+## Github Workflow
+### Branching
+When working on an issue, create a branch specific to that feature/bug. If two people are working on the same feature, they should each have a branch off of the feature branch. There should be a naming convention in place. The name of the branch should contain sufficient detail as to the purpose of that branch. For example, you may want to include the identity of the creator of the branch name so that colleagues know who the branch belongs to. You may want to have a segment that identifies the task being accomplished or the date started. An example of a naming convention would look like `feature_{TASK_ID}` or `{YOUR_INITIALS}_{TASK_NAME}`.
+
+### Commit
+The title of the commit can be anything you want. Including an integration in the title is only necessary if the pull request's title will not suffice. If you believe a series of commits can/should be combined into a single commit, you can use `rebase`, `merge --squash`, or `reset` methods. This is commonly referred to as [squashing](http://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit).
+
+### Pull Request
+A pull request should sit on top of a merge so that any parties of interest can voice concerns or opinions relating to the syntax. This is not a format for discussion regarding the task being accomplished, but rather the methods used. Any integrated hooks should be placed in the title of the pull request. By doing so, a single permalink can be used to represent all of the commits required to accomplish a certain task.
+
+### Code Review
+Code review can be useful for a few reasons. 
+- It allows someone with more experience to critique your approach and give feedback. 
+- It allows someone with less experience to learn the code base. 
+- It increases exposure to common elements and enhances your familiarity with the material.
+
+### Merge
+Merging can be accomplished using the command line or the Github interface. If using the latter, be aware that there will be an extra commit to represent the merging of the pull request.
+
+## Best Practices
+- A staging branch should be set as a repository's default branch. This way, when setting up a pull request, the staging branch is selected as the destination branch automatically, preventing accidental merges into the master branch.
+- Merging into master should only occur when performing a release. For this reason, the process can be streamlined by automating deployments when the master branch is changed. This is enabled by a feature called webhooks. A few examples can be seen [here](https://www.nodejitsu.com/documentation/features/webhooks/), where changes to a branch trigger a sequence of deployment steps.

@@ -6,6 +6,20 @@
 service --status-all | grep '\[ + \]'
 ```
 
+```bash
+# Test all  possible color patterns at once
+
+for i in 00{2..8} {0{3,4,9},10}{0..7}
+do echo -e "$i \e[0;${i}mSubdermatoglyphic text\e[00m  \e[1;${i}mSubdermatoglyphic text\e[00m"
+done
+
+for i in 00{2..8} {0{3,4,9},10}{0..7}
+do for j in 0 1
+	do echo -e "$j;$i \e[$j;${i}mSubdermatoglyphic text\e[00m"
+	done
+done
+```
+
 ## Tools
 
 ---
@@ -95,8 +109,12 @@ service --status-all | grep '\[ + \]'
 - Get a list of network adapters and IP addresses in short form:
 
 ```bash
+ip -br a
+# or
 ip -o -4 addr list | awk '{print $2, $4}'
+
 ```
+
 
 - Get interface MAC addresses:
 
@@ -254,4 +272,11 @@ ssh -v -oHostKeyAlgorithms=+ssh-rsa <ip> -l msfadmin
 
 ```bash
 > file.txt
+```
+
+- Reset Ubuntu VM Password:
+```bash
+mount -rw -o remount /
+ls /home
+passwd <user>
 ```
