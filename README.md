@@ -22,22 +22,22 @@ Complete collection of notes and resources for Cybersecurity, Pentesting, and Et
 
 ## Recommended Plugins
 
-| Plugin          |      Author     |                                       GitHub Link                                      |
-|-----------------|:---------------:|:--------------------------------------------------------------------------------------:|
-| Advanced Canvas |  Developer-Mike | [obsidian-advanced-canvas](https://github.com/Developer-Mike/obsidian-advanced-canvas) |
-| Advanced Tables |  Tony Grosinger |   [advanced-tables-obsidian](https://github.com/tgrosinger/advanced-tables-obsidian)   |
-| Code Styler     | Mayuran Visakan |        [Obsidian-Code-Styler](https://github.com/mayurankv/Obsidian-Code-Styler)       |
-| Breadcrumbs     |  SkepticMystic  |               [breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)              |
-| Highlightr      |     chetachi    |       [Highlightr-Plugin](https://github.com/chetachiezikeuzor/Highlightr-Plugin)      |
-| Latex Suite     |    aristicat    |       [obsidian-latex-suite](https://github.com/artisticat1/obsidian-latex-suite)      |
+| **Plugin**          |     **Author**      |                                      **GitHub Link**                                       |
+| --------------- | :-------------: | :------------------------------------------------------------------------------------: |
+| Advanced Canvas | Developer-Mike  | [obsidian-advanced-canvas](https://github.com/Developer-Mike/obsidian-advanced-canvas) |
+| Advanced Tables | Tony Grosinger  |   [advanced-tables-obsidian](https://github.com/tgrosinger/advanced-tables-obsidian)   |
+| Code Styler     | Mayuran Visakan |       [Obsidian-Code-Styler](https://github.com/mayurankv/Obsidian-Code-Styler)        |
+| Breadcrumbs     |  SkepticMystic  |              [breadcrumbs](https://github.com/SkepticMystic/breadcrumbs)               |
+| Highlightr      |    chetachi     |      [Highlightr-Plugin](https://github.com/chetachiezikeuzor/Highlightr-Plugin)       |
+| Latex Suite     |    aristicat    |      [obsidian-latex-suite](https://github.com/artisticat1/obsidian-latex-suite)       |
 | PDF++           |      Ushio      |          [obsidian-pdf-plus](https://github.com/RyotaUshio/obsidian-pdf-plus)          |
 
 ## Recommended Themes
 
-| Theme         |       Author      |                                     GitHub Link                                     |
-|---------------|:-----------------:|:-----------------------------------------------------------------------------------:|
+| **Theme**         |      **Author**       |                                     **GitHub Link**                                     |
+| ------------- | :---------------: | :---------------------------------------------------------------------------------: |
 | Catppuccin    | Marshall Beckrich |            [catppuccin/obsidian](https://github.com/catppuccin/obsidian)            |
-| AnuPpuccin    |       Anubis      |               [AnuPuccin](https://github.com/AnubisNekhet/AnuPpuccin)               |
+| AnuPpuccin    |      Anubis       |               [AnuPuccin](https://github.com/AnubisNekhet/AnuPpuccin)               |
 | Retro Windows |    James Harte    | [retro-windows-obsidian](https://github.com/codeisconfusing/retro-windows-obsidian) |
 
 ## Contributing
